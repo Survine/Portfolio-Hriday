@@ -1,6 +1,6 @@
 import { BiLogoPostgresql } from "react-icons/bi"
 import { DiPostgresql, DiRedis } from "react-icons/di"
-import { FaNodeJs } from "react-icons/fa"
+import { FaNodeJs, FaPython } from "react-icons/fa"
 import { RiReactjsLine } from "react-icons/ri"
 import { SiMongodb } from "react-icons/si"
 import { TbBrandNextjs } from "react-icons/tb"
@@ -20,7 +20,7 @@ const Technologies = () => {
                 <SiMongodb className="text-7xl  text-green-400" />
             </div>
             <div className="p-4">
-                <DiRedis className="text-7xl text-red-700" />
+                <FaPython className="text-7xl text-blue-700" />
             </div>
             <div className="p-4">
                 <FaNodeJs className="text-7xl text-green-500" />
