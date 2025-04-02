@@ -1,8 +1,11 @@
 import profilePic from '../assets/hbprofilepic.jpg'
 import { HERO_CONTENT } from '../constants'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+
 const Hero = () => {
     return (
-        <div className="pb-8 lg:mb-36">
+        <div id='hero' className="pb-8 lg:mb-36">
             <div className="flex flex-wrap lg:flex-row-reverse">
                 <div className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:p-8">
@@ -11,18 +14,39 @@ const Hero = () => {
                 </div>
                 <div className='w-full lg:w-1/2'>
                     <div className='flex flex-col items-center lg:items-start mt-10'>
-                        <h2 className='pb-2 text-4xl tracking-tighter lg:text-8xl'>Hriday Bardhan</h2>
+                        <h2 className='pb-2 text-4xl tracking-tighter lg:text-7xl'>Hriday Bardhan</h2>
                         <span className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl 
                         tracking-tight text-transparent'>Full Stack Developer</span>
                         <p className='my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter'>{HERO_CONTENT}</p>
-                        <a href="/hriday-bardhan-resume.pdf" 
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        download={true}
-                        className='bg-white rounded-full p-4 text-sm text-stone-800 mb-10 '
-                        >Download Resume</a>
+                    </div>
+                    <div className='mt-8 flex items-center justify-start gap-6 text-5xl w-full'>
+                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='LinkedIn'>
+                            <FaLinkedin />
+                        </a>
+                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='Github'>
+                            <FaGithub />
+                        </a>
+                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='Instagram'>
+                            <FaInstagram />
+                        </a>
+                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            aria-label='XTwitter'>
+                            <FaXTwitter />
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     )

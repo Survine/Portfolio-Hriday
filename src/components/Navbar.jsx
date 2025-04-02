@@ -1,6 +1,14 @@
-import { FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa'
+
 import logo from '../assets/hblogo.png'
-import { FaXTwitter } from 'react-icons/fa6'
+
+import { navItems } from '../constants'
+
+const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+};
 
 const Navbar = () => {
     return (
@@ -10,31 +18,14 @@ const Navbar = () => {
                     <img src={logo} width={70} height={40} alt='logo' />
                 </a>
             </div>
-            <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-                <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    aria-label='LinkedIn'>
-                    <FaLinkedin />
-                </a>
-                <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    aria-label='Github'>
-                    <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    aria-label='Instagram'>
-                    <FaInstagram />
-                </a>
-                <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    aria-label='XTwitter'>
-                    <FaXTwitter/>
-                </a>
+            <div>
+                <ul className='hidden lg:flex space-x-4 ml-14 tracking-tighter'>
+                    {navItems.map((item, index) => (
+                        <li key={index} >
+                            <button onClick={() => scrollToSection(item.href)} className="cursor-pointer font-semibold">{item.label}</button>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </nav>
     )
