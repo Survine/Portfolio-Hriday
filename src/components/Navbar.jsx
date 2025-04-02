@@ -1,4 +1,4 @@
-import logo from '../assets/hblogo.png'
+import logo from '../assets/hbprofilepic.png'
 import { navItems } from '../constants'
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
