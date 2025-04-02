@@ -64,7 +64,7 @@ const Navbar = () => {
                 <FaLinkedin className="h-4 w-4" />
               </a>
               <a 
-                href="https://github.com/yourusername"
+                href="https://github.com/Survine"
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='Github'
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <FaGithub className="h-4 w-4" />
               </a>
               <a 
-                href="https://instagram.com/yourusername"
+                href="https://www.instagram.com/survine_og/"
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='Instagram'
@@ -82,7 +82,7 @@ const Navbar = () => {
                 <FaInstagram className="h-4 w-4" />
               </a>
               <a 
-                href="https://twitter.com/yourusername"
+                href="https://x.com/Survine_"
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='XTwitter'

@@ -3,7 +3,7 @@ import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
-export const HERO_CONTENT = `I’m a Full-Stack Developer and aspiring Computer Science Engineer with expertise in Python, C++, and JavaScript. Passionate about building scalable web applications, I specialize in API integration, database management, and performance optimization. With experience in industry collaborations and coding competitions, I enjoy developing innovative solutions to real-world challenges.`;
+export const HERO_CONTENT = `I’m a Full-Stack Developer and CS student skilled in Python, C++, and JavaScript, with expertise in building scalable web apps, API integration, and database management. Passionate about optimization and problem-solving, I thrive in industry projects and coding competitions to create innovative solutions.`;
 
 export const navItems = [
   { label: "About", href: "hero" },

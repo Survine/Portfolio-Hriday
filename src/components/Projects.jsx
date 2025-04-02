@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 const Projects = () => {
   return (
     <section id="projects" className="pb-20">
-      <h2 className="my-16 text-center text-5xl font-bold text-white">Projects</h2>
+      <h2 className="my-16 text-center text-4xl font-bold text-white">Projects</h2>
 
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
