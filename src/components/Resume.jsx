@@ -4,8 +4,8 @@ import { FaFilePdf } from "react-icons/fa";
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf"; // Update with the actual path to your resume file
-    link.download = "Your_Name_Resume.pdf";
+    link.href = "/hriday-bardhan-resume.pdf"; 
+    link.download = "Hriday_Bardhan.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -17,7 +17,7 @@ const Resume = () => {
       <p className="text-gray-300 text-center mt-2">
         Explore my professional journey and technical expertise
       </p>
-      <p className="text-gray-400 text-sm mt-2">
+      <p className="text-gray-400 text-sm text-center mt-2">
         Click icon to preview or button to download
       </p>
       <div className="mt-4">
@@ -31,7 +31,7 @@ const Resume = () => {
         Download Resume
       </button>
       <p className="text-gray-400 text-sm mt-4">
-        PDF Format | Last Updated: July 2024
+        PDF Format | Last Updated: April 2025
       </p>
     </div>
   );

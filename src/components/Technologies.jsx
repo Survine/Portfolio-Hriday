@@ -5,6 +5,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
+// eslint-disable-next-line no-unused-vars
 const TechIcon = ({ icon: Icon, name, color }) => {
   return (
     <div className="group relative p-4 transition-all duration-300 hover:z-10">
