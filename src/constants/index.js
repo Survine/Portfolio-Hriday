@@ -10,7 +10,6 @@ export const navItems = [
   { label: "Technologies", href: "tech" },
   { label: "Resume", href: "resume" },
   { label: "Projects", href: "projects" },
-  { label: "Contact Me", href: "contact" },
 ];
 
 

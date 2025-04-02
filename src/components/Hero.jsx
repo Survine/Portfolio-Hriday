@@ -1,11 +1,10 @@
 import profilePic from '../assets/hbprofilepic.jpg'
 import { HERO_CONTENT } from '../constants'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
-import { FaXTwitter } from 'react-icons/fa6'
+
 
 const Hero = () => {
     return (
-        <div id='hero' className="pb-8 lg:mb-36">
+        <div id='hero' className="mt-20 pb-8 lg:mb-36">
             <div className="flex flex-wrap lg:flex-row-reverse">
                 <div className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:p-8">
@@ -19,32 +18,7 @@ const Hero = () => {
                         tracking-tight text-transparent'>Full Stack Developer</span>
                         <p className='my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter'>{HERO_CONTENT}</p>
                     </div>
-                    <div className='mt-8 flex items-center justify-start gap-6 text-5xl w-full'>
-                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            aria-label='LinkedIn'>
-                            <FaLinkedin />
-                        </a>
-                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            aria-label='Github'>
-                            <FaGithub />
-                        </a>
-                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            aria-label='Instagram'>
-                            <FaInstagram />
-                        </a>
-                        <a href="https://www.linkedin.com/in/hriday-bardhan-53a114264/"
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            aria-label='XTwitter'>
-                            <FaXTwitter />
-                        </a>
-                    </div>
+                    
                 </div>
 
             </div>
