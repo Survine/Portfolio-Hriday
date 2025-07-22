@@ -4,7 +4,7 @@ import { FaFilePdf } from "react-icons/fa";
 const Resume = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/hriday-bardhan-resume.pdf"; 
+    link.href = "/Hriday_Bardhan.pdf";
     link.download = "Hriday_Bardhan.pdf";
     document.body.appendChild(link);
     link.click();
