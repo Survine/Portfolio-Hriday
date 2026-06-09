@@ -1,51 +1,71 @@
+// Project images — replace these with real screenshots
+// Just drop your images in src/assets/projects/ and update the imports
 import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
+// import project5 from "../assets/projects/project-5.webp"; // Add 5th image
 
-export const HERO_CONTENT = `I’m a Full-Stack Developer and CS student skilled in Python, C++, and JavaScript, with expertise in building scalable web apps, API integration, and database management. Passionate about optimization and problem-solving, I thrive in industry projects and coding competitions to create innovative solutions.`;
+export const HERO_CONTENT = `Full-Stack Developer and CS student who builds real-time systems, blockchain apps, and AI-powered solutions. I turn complex problems into clean, scalable products — from WebSocket chat platforms to decentralized credential verification.`;
 
 export const navItems = [
   { label: "About", href: "hero" },
   { label: "Technologies", href: "tech" },
   { label: "Resume", href: "resume" },
   { label: "Projects", href: "projects" },
+  { label: "Contact", href: "contact" },
 ];
-
 
 export const PROJECTS = [
   {
-    title: "FlowSync Website",
-    image: project1,
+    title: "Resolvify",
+    image: project1, // Replace with real screenshot
     description:
-      "A fully functional automation website with features like signin, signup, admin login, Dashboard.",
-    technologies: ["HTML", "CSS", "React", "TailWind CSS", "Recharts"],
+      "Multi-shop customer support platform for 50+ users with real-time WebSocket chat, role-based access control, and a live dashboard that improved response time by 30%.",
+    technologies: ["React", "FastAPI", "WebSockets", "REST API"],
+    githubLink: "#", // Add your GitHub link
+    liveLink: "", // Add live demo link or leave empty
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "BlockCert",
+    image: project2, // Replace with real screenshot
     description:
-      "An application for managing tasks and projects, with features such as task creation and progress tracking.",
-    technologies: ["HTML", "CSS", "React", "MySql"],
+      "Decentralized credential verification platform using Ethereum smart contracts and IPFS. SHA-256 hashing ensures 100% data immutability, deployed on Sepolia testnet.",
+    technologies: ["React", "Solidity", "Hardhat", "IPFS"],
+    githubLink: "#", // Add your GitHub link
+    liveLink: "", // Add live demo link or leave empty
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "Mediq",
+    image: project3, // Replace with real screenshot
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind CSS", "Framer Motion"],
+      "Medicine inventory management and billing system with automated stock updates reducing manual errors by 40%. Scalable CRUD APIs built with SQLAlchemy ORM.",
+    technologies: ["React", "FastAPI", "SQLAlchemy", "MySQL"],
+    githubLink: "#", // Add your GitHub link
+    liveLink: "", // Add live demo link or leave empty
   },
   {
-    title: "File Encoder Decoder",
-    image: project4,
+    title: "IntrusionIQ",
+    image: project4, // Replace with real screenshot
     description:
-      "Created a file encoder-decoder system using Huffman encoding for file compression and decompression.",
-    technologies: ["Python", "Tkinter", "SqlAlchemy"],
+      "Underwater image enhancement and object detection system using YOLOv8. WB+CLAHE enhancement pipeline with comprehensive PSNR/SSIM quality metrics and analytics dashboard.",
+    technologies: ["Python", "YOLOv8", "OpenCV", "TensorFlow"],
+    githubLink: "#", // Add your GitHub link
+    liveLink: "", // Add live demo link or leave empty
+  },
+  {
+    title: "Face Recognition Attendance",
+    image: project5, // Replace with real screenshot (reusing project4 as placeholder)
+    description:
+      "AI-powered attendance system using CNN and OpenCV for facial recognition. Trained on 300+ samples achieving 95% accuracy, reducing manual processing time by 70%.",
+    technologies: ["Python", "TensorFlow", "OpenCV", "CNN"],
+    githubLink: "#", // Add your GitHub link
+    liveLink: "", // Add live demo link or leave empty
   },
 ];
 
 export const CONTACT = {
   address: "Chanmuri, Bamutia Road, Agartala, Tripura, India",
-  phoneNo: "+91 6009416189 ",
+  phoneNo: "+91 6009416189",
   email: "hridaybardhan18@gmail.com",
 };
