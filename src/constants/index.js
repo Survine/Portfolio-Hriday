@@ -47,12 +47,12 @@ export const PROJECTS = [
   },
   {
     title: "IntrusionIQ",
-    image: project4, // Replace with real screenshot
+    image: project4,
     description:
-      "Underwater image enhancement and object detection system using YOLOv8. WB+CLAHE enhancement pipeline with comprehensive PSNR/SSIM quality metrics and analytics dashboard.",
-    technologies: ["Python", "YOLOv8", "OpenCV", "TensorFlow"],
-    githubLink: "#", // Add your GitHub link
-    liveLink: "", // Add live demo link or leave empty
+      "AI-powered SOC platform for network intrusion detection trained on 2.8M+ CICIDS2017 flows. Two-stage pipeline: Voting Ensemble (RF + XGBoost + MLP) achieves 99.72% F1 with Isolation Forest for zero-day detection. FastAPI backend, React SOC dashboard, fully containerized with Docker.",
+    technologies: ["Python", "FastAPI", "React", "XGBoost", "scikit-learn", "Docker"],
+    githubLink: "https://github.com/Survine/IntrusionIQ",
+    liveLink: "",
   },
   {
     title: "Face Recognition Attendance",
@@ -64,13 +64,13 @@ export const PROJECTS = [
     liveLink: "", // Add live demo link or leave empty
   },
   {
-    title: "Instagram Comments Analyser",
-    image: project6, // Replace with real screenshot
+    title: "VI Analysis",
+    image: project6,
     description:
-      "NLP-powered tool that scrapes and analyzes Instagram post comments for sentiment analysis, trend detection, and engagement insights. Visualizes comment patterns with interactive charts and word clouds.",
-    technologies: ["Python", "NLP", "Selenium", "Streamlit"],
-    githubLink: "#", // Add your GitHub link
-    liveLink: "", // Add live demo link or leave empty
+      "NLP pipeline analyzing 173K+ Instagram comments across virtual influencers (Lil Miquela, Imma, Naina, Kyra). Multilingual sentiment analysis with DistilBERT, topic modeling via BERTopic and LDA, and 17-chart visualization suite for engagement and trend insights.",
+    technologies: ["Python", "DistilBERT", "BERTopic", "NLP", "Kaggle"],
+    githubLink: "#",
+    liveLink: "",
   },
 ];
 
