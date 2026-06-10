@@ -5,6 +5,7 @@ import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 import project5 from "../assets/projects/project-5.webp";
+import project6 from "../assets/projects/project-6.webp";
 
 export const HERO_CONTENT = `Full-Stack Developer and CS student who builds real-time systems, blockchain apps, and AI-powered solutions. I turn complex problems into clean, scalable products — from WebSocket chat platforms to decentralized credential verification.`;
 
@@ -60,6 +61,15 @@ export const PROJECTS = [
     description:
       "AI-powered attendance system using CNN and OpenCV for facial recognition. Trained on 300+ samples achieving 95% accuracy, reducing manual processing time by 70%.",
     technologies: ["Python", "TensorFlow", "OpenCV", "CNN"],
+    githubLink: "#", // Add your GitHub link
+    liveLink: "", // Add live demo link or leave empty
+  },
+  {
+    title: "Instagram Comments Analyser",
+    image: project6, // Replace with real screenshot
+    description:
+      "NLP-powered tool that scrapes and analyzes Instagram post comments for sentiment analysis, trend detection, and engagement insights. Visualizes comment patterns with interactive charts and word clouds.",
+    technologies: ["Python", "NLP", "Selenium", "Streamlit"],
     githubLink: "#", // Add your GitHub link
     liveLink: "", // Add live demo link or leave empty
   },
