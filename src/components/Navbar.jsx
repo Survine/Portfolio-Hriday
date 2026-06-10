@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,28 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Track active section with IntersectionObserver
+  useEffect(() => {
+    const sectionIds = navItems.map((item) => item.href);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   // Close mobile menu on resize
@@ -70,7 +93,11 @@ const Navbar = () => {
               <button
                 key={index}
                 onClick={() => scrollToSection(item.href)}
-                className="px-4 py-2 text-sm font-medium text-white/80 hover:text-white rounded-full hover:bg-white/10 transition-all duration-300"
+                className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
+                  activeSection === item.href
+                    ? "text-white bg-white/15"
+                    : "text-white/80 hover:text-white hover:bg-white/10"
+                }`}
               >
                 {item.label}
               </button>
@@ -157,7 +184,11 @@ const Navbar = () => {
             <button
               key={index}
               onClick={() => scrollToSection(item.href)}
-              className="block w-full text-left px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200"
+              className={`block w-full text-left px-4 py-3 text-sm font-medium rounded-lg transition-all duration-200 ${
+                activeSection === item.href
+                  ? "text-white bg-white/15"
+                  : "text-white/80 hover:text-white hover:bg-white/10"
+              }`}
             >
               {item.label}
             </button>
