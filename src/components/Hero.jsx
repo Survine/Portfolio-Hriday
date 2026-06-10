@@ -85,11 +85,14 @@ const Hero = () => {
                 View Projects
               </button>
               <button
-                onClick={() =>
-                  document
-                    .getElementById("resume")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Hriday_Bardhan.pdf";
+                  link.download = "Hriday_Bardhan.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
                 className="px-6 py-3 text-sm font-semibold text-white/80 border border-white/20 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 hover:scale-105"
               >
                 Download Resume

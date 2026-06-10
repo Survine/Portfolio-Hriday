@@ -66,7 +66,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-12">
+        <div className="relative flex items-center justify-between h-12">
           {/* Logo with Name */}
           <div className="flex-shrink-0 flex items-center space-x-3">
             <a href="/" aria-label="Home" className="flex items-center">
@@ -85,7 +85,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation Links */}
           <div
-            className={`hidden md:flex items-center space-x-1 rounded-full px-2 py-1 transition-all duration-300 ${
+            className={`hidden md:flex md:absolute md:left-1/2 md:-translate-x-1/2 items-center space-x-1 rounded-full px-2 py-1 transition-all duration-300 ${
               scrolled ? "bg-white/10" : "bg-white/5"
             }`}
           >
