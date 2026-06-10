@@ -4,13 +4,14 @@ import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
-// import project5 from "../assets/projects/project-5.webp"; // Add 5th image
+import project5 from "../assets/projects/project-5.webp";
 
 export const HERO_CONTENT = `Full-Stack Developer and CS student who builds real-time systems, blockchain apps, and AI-powered solutions. I turn complex problems into clean, scalable products — from WebSocket chat platforms to decentralized credential verification.`;
 
 export const navItems = [
   { label: "About", href: "hero" },
-  { label: "Technologies", href: "tech" },
+  { label: "Skills", href: "tech" },
+  { label: "Experience", href: "experience" },
   { label: "Resume", href: "resume" },
   { label: "Projects", href: "projects" },
   { label: "Contact", href: "contact" },
@@ -55,7 +56,7 @@ export const PROJECTS = [
   },
   {
     title: "Face Recognition Attendance",
-    image: project5, // Replace with real screenshot (reusing project4 as placeholder)
+    image: project5, // Replace with real screenshot
     description:
       "AI-powered attendance system using CNN and OpenCV for facial recognition. Trained on 300+ samples achieving 95% accuracy, reducing manual processing time by 70%.",
     technologies: ["Python", "TensorFlow", "OpenCV", "CNN"],
