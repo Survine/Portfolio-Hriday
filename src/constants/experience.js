@@ -2,6 +2,14 @@
 
 export const EXPERIENCES = [
   {
+    role: "Cybersecurity Intern",
+    company: "Honeywell",
+    period: "2026",
+    description:
+      "Cybersecurity internship focusing on industrial security, threat analysis, and secure system design at Honeywell.",
+    technologies: ["Cybersecurity", "Threat Analysis", "Network Security", "SIEM"],
+  },
+  {
     role: "AI & Machine Learning Trainee",
     company: "CTTC Bhubaneshwar",
     period: "2025",
