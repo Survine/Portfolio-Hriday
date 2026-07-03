@@ -1,7 +1,7 @@
 // Project images — replace these with real screenshots
 // Just drop your images in src/assets/projects/ and update the imports
 import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
+import project2 from "../assets/projects/blockcert.png";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 import project5 from "../assets/projects/project-5.webp";
@@ -33,8 +33,8 @@ export const PROJECTS = [
     description:
       "Decentralized credential verification platform using Ethereum smart contracts and IPFS. SHA-256 hashing ensures 100% data immutability, deployed on Sepolia testnet.",
     technologies: ["React", "Solidity", "Hardhat", "IPFS"],
-    githubLink: "#", // Add your GitHub link
-    liveLink: "", // Add live demo link or leave empty
+    githubLink: "https://github.com/Survine/BlockCert",
+    liveLink: "https://block-cert-nu.vercel.app/",
   },
   {
     title: "Mediq",
