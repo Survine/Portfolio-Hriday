@@ -3,8 +3,8 @@
 import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/blockcert.png";
 import project3 from "../assets/projects/mediq.png";
-import project4 from "../assets/projects/project-4.webp";
-import project5 from "../assets/projects/project-5.webp";
+import project4 from "../assets/projects/project-2.webp";
+import project5 from "../assets/projects/project-3.webp";
 import project6 from "../assets/projects/project-6.webp";
 
 export const HERO_CONTENT = `Full-Stack Developer and CS student who builds real-time systems, blockchain apps, and AI-powered solutions. I turn complex problems into clean, scalable products — from WebSocket chat platforms to decentralized credential verification.`;
