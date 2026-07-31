@@ -2,7 +2,7 @@
 // Just drop your images in src/assets/projects/ and update the imports
 import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/blockcert.png";
-import project3 from "../assets/projects/project-3.webp";
+import project3 from "../assets/projects/mediq.png";
 import project4 from "../assets/projects/project-4.webp";
 import project5 from "../assets/projects/project-5.webp";
 import project6 from "../assets/projects/project-6.webp";
@@ -42,8 +42,8 @@ export const PROJECTS = [
     description:
       "Medicine inventory management and billing system with automated stock updates reducing manual errors by 40%. Scalable CRUD APIs built with SQLAlchemy ORM.",
     technologies: ["React", "FastAPI", "SQLAlchemy", "MySQL"],
-    githubLink: "#", // Add your GitHub link
-    liveLink: "", // Add live demo link or leave empty
+    githubLink: "https://github.com/Survine/Mediq", // Add your GitHub link
+    liveLink: "https://mediq-inky.vercel.app/", // Add live demo link or leave empty
   },
   {
     title: "IntrusionIQ",
